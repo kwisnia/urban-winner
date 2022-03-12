@@ -15,4 +15,10 @@
         <listener class="com.github.kwisnia.urbanwinner.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+
+    <actions>
+        <action class="com.github.kwisnia.urbanwinner.WhatTheCommit" text="Generate Commit Message" description="Generate commit message" icon="AllIcons.General.Balloon">
+                <add-to-group group-id="ChangesView.CommitToolbar" anchor="last" />
+        </action>
+    </actions>
 </idea-plugin>
